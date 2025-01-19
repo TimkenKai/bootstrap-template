@@ -35,13 +35,228 @@
             </div>
         </nav>
         <!-- Page content-->
-        <div class="container">
-            <div class="text-center mt-5">
-                <h1>A Bootstrap 5 Starter Template</h1>
-                <p class="lead">A complete project boilerplate built with Bootstrap</p>
-                <p>Bootstrap v5.2.3</p>
-            </div>
+        <div class="theme-icon" id="themeIcon" title="Toggle Light/Dark Theme">
+            <img src="https://img.icons8.com/material-rounded/24/000000/sun--v1.png" id="themeIconImg" alt="Theme Icon">
         </div>
+    
+        <div class="container-fluid">
+            <div class="row vh-100">
+                <nav class="col-3 col-md-2 bg-dark text-white p-3 sidebar">
+                    <h2 class="text-center">Menu</h2>
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#about">About Me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#education">Education</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#experience">IT Experience</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#gallery">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#goals">Goals in Life</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#footer">Footer</a>
+                        </li>
+                    </ul>
+                </nav>
+    
+                <main class="col-9 col-md-10 bg-light">
+                    <div class="container py-4">
+                        <section id="about">
+                            <h1 class="text-primary">About Me</h1>
+                            <p>Timothy Ivan Mendoza</p>
+                            <p>A college student at Asia Pacific College with part-time work as a Badminton Coach and assistant to various people.</p>
+                        </section>
+    
+                        <section id="education" class="mt-4">
+                            <h2 class="text-primary">Education / Achievements</h2>
+                            <table class="table table-bordered">
+                                <thead class="table-dark">
+                                    <tr>
+                                        <th>College</th>
+                                        <th>Secondary</th>
+                                        <th>Primary</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Asia Pacific College</td>
+                                        <td>Don Bosco Technical Institute Makati</td>
+                                        <td>Don Bosco Technical Institute Makati</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2020–2024</td>
+                                        <td>2011–2015</td>
+                                        <td>2005–2011</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p>Currently studying at Asia Pacific College. <a href="https://www.apc.edu.ph" target="_blank" class="link-primary">Visit Asia Pacific College's Website</a></p>
+                        </section>
+    
+                        <section id="experience" class="mt-4">
+                            <h2 class="text-primary">IT Experience</h2>
+                            <p>Programming languages I know:</p>
+                            <div class="row g-4">
+                                <div class="col-md-4">
+                                    <a href="https://learn.microsoft.com/en-us/dotnet/csharp/" target="_blank">
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Logo_C_sharp.svg/1820px-Logo_C_sharp.svg.png" alt="C#" class="img-fluid rounded">
+                                    </a>
+                                    <p class="mt-2 text-center">C# Programming</p>
+                                </div>
+                                <div class="col-md-4">
+                                    <a href="https://www.python.org" target="_blank">
+                                        <img src="https://www.python.org/static/img/python-logo.png" alt="Python" class="img-fluid rounded">
+                                    </a>
+                                    <p class="mt-2 text-center">Python Programming</p>
+                                </div>
+                                <div class="col-md-4">
+                                    <a href="https://www.r-project.org" target="_blank">
+                                        <img src="https://www.r-project.org/Rlogo.png" alt="R" class="img-fluid rounded">
+                                    </a>
+                                    <p class="mt-2 text-center">R Programming</p>
+                                </div>
+                            </div>
+                        </section>
+    
+                        <section id="gallery" class="mt-4">
+                            <h2 class="text-primary">Gallery</h2>
+                            <div class="row g-3">
+                                <div class="col-md-4">
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal1">
+                                        <img src="https://raw.githubusercontent.com/TimkenKai/WebProgss231PersonalRepoHost/refs/heads/main/home/image1.jpg" alt="Gallery Image 1" class="img-fluid rounded shadow">
+                                    </a>
+                                </div>
+                                <div class="col-md-4">
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal2">
+                                        <img src="https://toc.h-cdn.co/assets/16/30/2560x1920/sd-aspect-1469562775-gettyimages-452846870.jpg" alt="Gallery Image 2" class="img-fluid rounded shadow">
+                                    </a>
+                                </div>
+                                <div class="col-md-4">
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal3">
+                                        <img src="https://raw.githubusercontent.com/TimkenKai/WebProgss231PersonalRepoHost/refs/heads/main/home/image2.jpg" alt="Gallery Image 3" class="img-fluid rounded shadow">
+                                    </a>
+                                </div>
+                            </div>
+    
+                            <!-- Bootstrap Modals -->
+                            <div class="modal fade" id="imageModal1" tabindex="-1" aria-labelledby="imageModal1Label" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <img src="https://raw.githubusercontent.com/TimkenKai/WebProgss231PersonalRepoHost/refs/heads/main/home/image1.jpg" alt="Gallery Image 1" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal fade" id="imageModal2" tabindex="-1" aria-labelledby="imageModal2Label" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <img src="https://toc.h-cdn.co/assets/16/30/2560x1920/sd-aspect-1469562775-gettyimages-452846870.jpg" alt="Gallery Image 2" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal fade" id="imageModal3" tabindex="-1" aria-labelledby="imageModal3Label" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <img src="https://raw.githubusercontent.com/TimkenKai/WebProgss231PersonalRepoHost/refs/heads/main/home/image2.jpg" alt="Gallery Image 3" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+    
+                        <section id="goals" class="mt-4">
+                            <h2 class="text-primary">Goals in Life</h2>
+                            <ol>
+                                <li>To have a stable source of income</li>
+                                <li>To own successful businesses</li>
+                                <li>To gain more skills for personal and professional growth</li>
+                                <li>To build a complete and loving family</li>
+                                <li>To travel the world and settle in a country that prioritizes its people</li>
+                            </ol>
+                        </section>
+                    </div>
+                </main>
+            </div>
+    
+            <div id="contact">
+                <div class="contact-content">
+                  <h2>Contact Me or Send a Message</h2>
+                  <form class="form-container">
+                    <div class="personal-info">
+                      <div class="personal-input full-name">
+                        <label for="fullName">Full Name</label>
+                        <input
+                          placeholder="Timothy Ivan"
+                          id="fullName"
+                          type="text"
+                          required
+                        />
+                      </div>
+                      <div class="personal-input email">
+                        <label for="email">Email Address</label>
+                        <input
+                          placeholder="example@gmail.com"
+                          id="email"
+                          type="email"
+                          required
+                        />
+                      </div>
+                    </div>
+                    <div class="message-input">
+                      <label for="message">Message</label>
+                      <textarea
+                        id="message"
+                        placeholder="Hello, I would like to ask about..."
+                        required
+                      ></textarea>
+                    </div>
+                    <div class="button-container">
+                      <button type="submit">Submit</button>
+                      <p class="feedback-message d-none">Message sent!</p>
+                    </div>
+                  </form>
+                </div>
+            </div>
+    
+            <footer id="footer" class="bg-dark text-white text-center py-3">
+                <p>&copy; 2025 Timothy Ivan Mendoza</p>
+                <div>
+                    <a href="https://github.com/TimkenKai/WebProgss231PersonalRepoHost" target="_blank" class="text-white mx-2">GitHub</a>
+                </div>
+            </footer>
+        </div>
+    
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+        <script>
+            const themeIcon = document.getElementById('themeIcon');
+            const themeIconImg = document.getElementById('themeIconImg');
+    
+            // Save theme preference in local storage
+            const setTheme = (isDark) => {
+                document.body.classList.toggle('dark-theme', isDark);
+                themeIconImg.src = isDark ? 
+                    'https://img.icons8.com/material-rounded/24/ffffff/moon-satellite.png' :
+                    'https://img.icons8.com/material-rounded/24/000000/sun--v1.png';
+                localStorage.setItem('theme', isDark ? 'dark' : 'light');
+            };
+    
+            const savedTheme = localStorage.getItem('theme') === 'dark';
+            setTheme(savedTheme);
+    
+            themeIcon.addEventListener('click', () => setTheme(!document.body.classList.contains('dark-theme')));
+    
+            
+            document.querySelector('form').addEventListener('submit', function (e) {
+                e.preventDefault();
+                const feedbackMessage = document.querySelector('.feedback-message');
+                feedbackMessage.classList.remove('d-none');
+                setTimeout(() => feedbackMessage.classList.add('d-none'), 3000);
+            });
+        </script>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
